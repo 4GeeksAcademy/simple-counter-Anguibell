@@ -6,7 +6,7 @@ import CardClock from "./cardClock";
 const SecondsCounter = ({seconds}) => {
 
 	return (
-		<div className="container-fluid d-flex justify-content-center gap-2 bg-black p-3">
+		<div className="container-fluid d-flex gap-2">
 			<CardClock />
 			<Card number={Math.floor((seconds/100000)%10)}/>
 			<Card number={Math.floor((seconds/10000)%10)}/>
